@@ -1,5 +1,5 @@
 {
-  "name": "env-trace",
+  "name": "@hacker-saran/env-trace",
   "version": "1.0.0",
   "type": "module",
   "description": "Audit, sync, and prune environment variables.",
@@ -7,7 +7,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
-    "env-trace": "./dist/cli.js"
+    "env-trace": "dist/cli.js"
   },
   "files": [
     "dist"

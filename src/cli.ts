@@ -12,7 +12,7 @@ import { auditEnvs, syncTemplate } from './auditor.js';
 const program = new Command();
 
 program
-  .name('env-trace')
+  .name('@hacker-saran/env-trace')
   .description('🛡️  Audit and sync environment variables with style')
   .version('1.1.0')
   .option('-e, --env <path>', 'Path to your local .env file', '.env')

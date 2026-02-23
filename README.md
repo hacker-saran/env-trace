@@ -1,6 +1,7 @@
 # 🛡️ ENV Trace
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![npm version](https://img.shields.io/npm/v/@hacker-saran/env-trace?style=flat-square&color=CB3837&logo=npm)](https://www.npmjs.com/package/@hacker-saran/env-trace)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 **ENV Trace** is a sleek, AST-powered CLI tool designed to audit, sync, and prune environment variables. It ensures your `process.env` calls in code never drift from your local `.env` and template files.
@@ -36,10 +37,10 @@ Run the trace to audit your current directory:
 
 ```bash
 # Basic audit
-npx env-trace
+npx @hacker-saran/env-trace
 
 # Scan specific files and sync with example template
-npx env-trace --include "src/**/*.ts" --sync
+npx @hacker-saran/env-trace --include "src/**/*.ts" --sync
 ```
 
 ## 🛠️ How it Works
