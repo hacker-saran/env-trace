@@ -1,0 +1,38 @@
+{
+  "name": "env-guardian",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Audit, sync, and prune environment variables.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "env-guardian": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts src/cli.ts --format cjs,esm --watch --dts",
+    "lint": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^20.19.33",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "acorn": "^8.0.0",
+    "boxen": "^7.0.0",
+    "chalk": "^5.0.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.0.0",
+    "glob": "^10.0.0",
+    "inquirer": "^9.0.0",
+    "ora": "^7.0.0"
+  }
+}
