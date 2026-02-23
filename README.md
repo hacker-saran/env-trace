@@ -21,7 +21,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/env-trace.git
+git clone https://github.com/hacker-saran/env-trace.git
 
 # Install dependencies
 npm install
